@@ -6,7 +6,7 @@
 										Saisir des merveilleux mome à travers mon regard.
 										Services disponibles à Bordeaux et dans toute la France"> <!--Modification : ajout d'une meta description pour afficher le texte sur le moteur de recherche-->
 	<meta charset="UTF-8" lang="fr"> <!--Modification : ajout de l'attribut lang pour définir la langue de la page web-->
-	<title>Nina Carducci - Photographie</title> <!--Modification : ajout d'un title à la page web-->
+	<title>Nina Carducci - Photographe</title> <!--Modification : ajout d'un title à la page web-->
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
 	<link rel="stylesheet" href="./assets/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,9 +18,9 @@
 	<script src="./assets/scripts.js"></script>
 </head>
 <body>
-	<div class="top-header">
-		<h3 class="name">Nina Carducci</h3>
-		<div class="nav">   
+	<header class="top-header"> <!--Modification sémantique : changement de la balise div en header-->
+		<h1 class="name">Nina Carducci</h1> <!--Modification sémantique : changement de la balise h3 en h1 car titre principal du site-->
+		<nav class="nav">  <!--Modification sémantique : changement de la balise div en nav-->  
 			<ul>
 				<li><a href="#about">À propos</a></li>
 				<li><a href="#gallery">Galerie</a></li>
@@ -28,10 +28,10 @@
 				<li><a href="#contact">Contact</a></li>
 				<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.png" alt="Logo d'Instagram"></a></li>
 			</ul>
-		</div>
-	</div>
+		</nav>
+	</header>
 
-	<div id="header">
+	<section id="header"> <!--Modification sémantique : changement de la balise div en section-->
 		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 			<div class="carousel-indicators">
 				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -58,19 +58,25 @@
 				<span class="visually-hidden">Next</span>
 			</button>
 		</div>
-	</div>
+	</section>
 
-	<div id="about">
+	<section id="about"> <!--Modification sémantique : changement de la balise div en section-->
 		<div class="picture left">
 			<img src="./assets/images/nina.webp" alt="Portrait de la photographe Nina Carducci">
 		</div>
 		<div id="about-me">
-			<h3 class="about-me__title">À propos de moi</h3> <!--Modification : "à" mis en majuscule-->
-			<h6 class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</h6>
-			<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
-				C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
+			<h2 class="about-me__title">À propos de moi</h2> <!--Modifications : "à" mis en majuscule + changement balise h3 en h2-->
+			<p class="about-me__introduction">Devenir photographe était pour moi une évidence. <!--Modification sémantique : changement de la balise h6 en p-->
+											Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, 
+											un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</p>
+			<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, 
+			nous n’avons qu’une envie : le figer au travers de photographies pour le savourer 
+			avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
+			C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, 
+			mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser 
+			de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 		</div>
-	</div>
+	</section>
 
 	<div id="gallery"> <!--à corriger = id et class avec le même intitulé-->
 		<h3 class="title">Portfolio</h3>

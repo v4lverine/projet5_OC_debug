@@ -252,7 +252,7 @@ input[type="submit"] {
 		margin-top: 0;
 		margin-bottom: 1em;
 	}
-	#about-me h6, #about-me p {
+	#about-me p { /*Modification : une propriété enlevée car répétitive*/
 		width: 100%;
 	}
 }
