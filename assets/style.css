@@ -85,7 +85,7 @@ body {
 	font-style: italic;
 	width: 60%;
 }
-#about-me p {
+.about-me__text{ /*Modification : changement de la propriété*/
 	width: 80%;
 	font-size: 14px;
 }
@@ -144,7 +144,7 @@ body {
 	font-family: 'Spectral';
 	font-style: italic;
 	font-weight: 300;
-
+	font-size: 2em; /*Modification : taille de la police des quotes augmentée pour coller avec l'effet voulue de base avec le h1*/
 }
 .quote__author {
 	font-family: 'Spectral';
@@ -185,6 +185,7 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	z-index: 1;
+	padding-bottom: 0;
 }
 
 #contact {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Le site officiel de la photographe Nina Carducci. 
@@ -69,17 +69,17 @@
 			<p class="about-me__introduction">Devenir photographe était pour moi une évidence. <!--Modification sémantique : changement de la balise h6 en p-->
 											Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, 
 											un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</p>
-			<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, 
+			<p class="about-me__text">Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, 
 			nous n’avons qu’une envie : le figer au travers de photographies pour le savourer 
 			avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
 			C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, 
 			mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser 
-			de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
+			de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p> <!--Modification : class renomméeS-->
 		</div>
 	</section>
 
-	<div id="gallery"> <!--à corriger = id et class avec le même intitulé-->
-		<h3 class="title">Portfolio</h3>
+	<main id="gallery"> <!--Modification sémantique : changement de la balise div en main-->
+		<h2 class="title">Portfolio</h2> <!--Modification sémantique : changement de la balise h3 en h2-->
 		<div class="container py-3">
 			<div class="gallery" style="display: none"> <!--ici-->
 				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul.webp" alt="Une photo montrant des gens s'amusant à un concert"/>
@@ -96,15 +96,19 @@
 		<div class="quote">
 			<figure>
 				<blockquote>
-					<h1 class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.</h1>
+					<p class="quote__text">Un portrait n’est pas une ressemblance. 
+					Dès lors qu’une émotion ou qu’un fait est traduit en photo, 
+					il cesse d’être un fait pour devenir une opinion. 
+					L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. 
+					Aucune d’elles n’est la vérité.</p> <!--Modification sémantique : changement de la balise h1 en p-->
 				</blockquote>
 				<figcaption class="quote__author">- Richard Avedon</figcaption>
 			</figure>
 		</div>
-	</div>
+	</main>
 
-	<div id="services">
-		<h3 class="title">Mes services</h3>
+	<section id="services"> <!--Modification sémantique : changement de la balise div en section-->
+		<h2 class="title">Mes services</h2> <!--Modification sémantique : changement de la balise h3 en h2-->
 		<div class="container">
 			<div class="service">
 				<div class="service__description">
@@ -112,10 +116,9 @@
 					<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
 				</div>
 				<div class="service__price">
-					<h4>350€/demi journée</h4>
-					<span>Matériel, déplacement inclus</span>
+					<h4>350€/demi journée</h4> <!--Voir pour modifications du h4 = p ?-->
+					<p>Matériel, déplacement inclus</p> <!--Modification sémantique : changement de la balise span en p-->
 				</div>
-
 			</div>
 			<div class="service">
 				<div class="service__description">
@@ -124,7 +127,7 @@
 				</div>
 				<div class="service__price">
 					<h4>50€/photo</h4>
-					<span>2 AR par photo</span>
+					<p>2 AR par photo</p> <!--Modification sémantique : changement de la balise span en p-->
 				</div>
 			</div>
 			<div class="service">
@@ -134,41 +137,42 @@
 				</div>
 				<div class="service__price">
 					<h4>400€ album A4</h4>
-					<span>30 pages recto/verso</span>
+					<p>30 pages recto/verso</p> <!--Modification sémantique : changement de la balise span en p-->
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 
-	<div class="quote">
+	<aside class="quote"> <!--Modification sémantique : changement de la balise div en aside-->
 		<figure>
 			<blockquote>
-				<h1 class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</h1>
+				<p class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, 
+				des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</p> <!--Modification sémantique : changement de la balise h1 en p-->
 			</blockquote>
 			<figcaption class="quote__author">- Richard Avedon</figcaption>
 		</figure>
-	</div>
+	</aside>
 
-	<div id="contact">
+	<footer id="contact"> <!--Modification sémantique : changement de la balise div en footer-->
 		<div class="container">
 			<div class="form-container">
-				<h3>Une question ? Une demande de devis ?</h3>
-				<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
+				<h2>Une question ? Une demande de devis ?</h2> <!--Modification sémantique : changement de la balise h3 en h2--> 
+				<p> N’hésitez pas à m’écrire ! Je vous répondrai en moins de 24 heures</p>
 				<form action="" method="post">
-					<label>Nom</label>
-					<input type="text" name="nom" id="nom">
-					<label>Email</label>
+					<label for="name">Nom</label> <!--Modification sémantique : ajout de l'attribut for pour associer le label à l'input-->
+					<input type="text" name="name" id="name"> <!--Modification sémantique : "name" mis en anglais-->
+					<label for="email">E-mail</label> <!--Modification sémantique : ajout de l'attribut for-->
 					<input type="email" name="email" id="email">
-					<label>Message</label>
+					<label for="message">Message</label> <!--Modification sémantique : ajout de l'attribut for-->
 					<textarea name="message" id="message" cols="30" rows="10"></textarea>
 					<input type="submit" value="Envoyer"/>
 				</form>
 			</div>
-			<div class="picture right">
+			<figure class="picture right"> <!--Pourquoi double class ?--> <!--Modification sémantique : changement de la balise div en figure-->
 				<img src="./assets/images/camera.webp" alt="Photo d'un appareil photo posé au sol">
-			</div>
+			</figure>
 		</div>
-	</div>
+	</footer>
 </body>
 
 </html>
