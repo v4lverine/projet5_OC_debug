@@ -98,7 +98,7 @@ body {
 	justify-content: center;
 }
 .nav-pills .nav-link.active-tag, .nav-pills .show > .nav-link { /*correction faite ici avec ajout de tag pour la couleur des sélecteurs de tags*/
-	color: #fff;
+	/* color: #fff; */ /*Modification : couleur par défaut rétablie car problème de contraste avec la couleur de fond (Wave Evaluation Tool)*/
 	background-color: #BEB45A;
 	border-radius:0 ;
 }
@@ -150,6 +150,9 @@ body {
 	font-family: 'Spectral';
 	font-weight: 800;
 	font-size: 22px;
+}
+.quotation{
+	font-size: 1.2em;
 }
 
 #services {
