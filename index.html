@@ -6,6 +6,13 @@
 										Saisir des merveilleux moments à travers mon regard.
 										Services disponibles à Bordeaux et dans toute la France"> <!--Modification : ajout d'une meta description pour afficher le texte sur le moteur de recherche-->
 	<meta charset="UTF-8" lang="fr"> <!--Modification : ajout de l'attribut lang pour définir la langue de la page web-->
+	<meta name="twitter:card" content="summary"> <!--Ajout de la meta pour les réseaux sociaux, ici Twitter Card-->
+	<meta name="twitter:site" content="@nina-carducci">
+	<meta name="twitter:title" content="Nina Carducci - Photographie">
+	<meta name="twitter:description" content="Le site officiel de la photographe Nina Carducci. Services disponibles dans toute la France">
+	<meta name="twitter:creator" content="@nina_carducci">
+	<meta name="twitter:image" content="https://nina-carducci.github.io/assets/images/nina.png">
+
 	<title>Nina Carducci - Photographe</title> <!--Modification : ajout d'un title à la page web-->
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
 	<link rel="stylesheet" href="./assets/style.css">
@@ -25,9 +32,10 @@
 				"@type": "PostalAddress",
 				"addressLocality": "Bordeaux, France",
 				"postalCode": "33200",
-				"streetAddress": "68 avenue Alsace-Lorraine"
+				"streetAddress": "68 avenue Alsace-Lorraine",
+				"addressCountry": "FR"
 			},
-			"telephone": "0556677889",
+			"telephone": "0033556677889",
 			"openingHoursSpecification" : [
 				{
 					"type": "OpeningHoursSpecification",
@@ -42,8 +50,13 @@
 						"closes": "19:00"
 				}
 			],
+			"sameAs":[
+				"https://facebook.com/nina-carducci-photo/",
+				"https://www.instagram.com/ninacarducci.photo/?hl=fr",
+				"https://twitter.com/nina-carducci/"
+				]
 		}
-	</script>
+	</script> <!--Ajout du référencement local-->
 	<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="./assets/maugallery.js"></script>
