@@ -118,7 +118,7 @@
         .attr("src", element.attr("src"));
       $(`#${lightboxId}`).modal("toggle");
     },
-    prevImage() {
+    prevImage() { //faire une seule et même fonction pour prev et nextImage
       let activeImage = null;
       $("img.gallery-item").each(function() {
         if ($(this).attr("src") === $(".lightboxImage").attr("src")) {
@@ -127,25 +127,13 @@
       });
       let activeTag = $(".tags-bar span.active-tag").data("images-toggle");
       let imagesCollection = [];
-      if (activeTag === "all") {
-        $(".item-column").each(function() {
-          if ($(this).children("img").length) {
-            imagesCollection.push($(this).children("img"));
-          }
-        });
-      } else {
-        $(".item-column").each(function() {
-          if (
-            $(this)
-              .children("img")
-              .data("gallery-tag") === activeTag
-          ) {
-            imagesCollection.push($(this).children("img"));
-          }
-        });
-      }
+      $(".item-column").each(function() {
+        if (activeTag === "all" || $(this).children("img").data("gallery-tag") === activeTag) { //condition minifiée pour plus de clarté
+          imagesCollection.push($(this).children("img"));
+        }
+      });
       let index = 0,
-        next = null;
+      next = null;
 
       $(imagesCollection).each(function(i) {
         if ($(activeImage).attr("src") === $(this).attr("src")) {
@@ -166,23 +154,11 @@
       });
       let activeTag = $(".tags-bar span.active-tag").data("images-toggle");
       let imagesCollection = [];
-      if (activeTag === "all") {
-        $(".item-column").each(function() {
-          if ($(this).children("img").length) {
-            imagesCollection.push($(this).children("img"));
-          }
-        });
-      } else {
-        $(".item-column").each(function() {
-          if (
-            $(this)
-              .children("img")
-              .data("gallery-tag") === activeTag
-          ) {
-            imagesCollection.push($(this).children("img"));
-          }
-        });
-      }
+      $(".item-column").each(function() {
+        if (activeTag === "all" || $(this).children("img").data("gallery-tag") === activeTag) { //condition minifiée pour plus de clarté
+          imagesCollection.push($(this).children("img"));
+        }
+      });
       let index = 0,
         next = null;
 
@@ -243,7 +219,7 @@
 
       var tag = $(this).data("images-toggle");
 
-      $(".gallery-item").each(function() {
+      $(".gallery-item").each(function() { //à optimiser !
         $(this)
           .parents(".item-column")
           .hide();
