@@ -80,7 +80,7 @@
 
 	<main> <!--Ajout de la balise main qui englobe le contenu du site, bon pour le SEO-->
 		<section id="header"> <!--Modification sémantique : changement de la balise div en section-->
-			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" aria-label="Carousel">
 				<div class="carousel-indicators">
 					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
 					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -88,20 +88,20 @@
 				</div>
 				<div class="carousel-inner">
 					<div class="carousel-item active">
-						<img src="./assets/images/slider/ryoji-iwata.webp" class="d-block w-100" alt="Photo d'un homme marchant sur un passage piéton">
+						<img src="./assets/images/slider/ryoji-iwata.webp" class="d-block w-100" alt="Photo d'un homme marchant sur un passage piéton" aria-label="Photo 1 du carrousel">
 					</div>
 					<div class="carousel-item">
-						<img src="./assets/images/slider/nicholas-green.webp" class="d-block w-100" alt="Photo d'un public passant un bon moment à un concert">
+						<img src="./assets/images/slider/nicholas-green.webp" class="d-block w-100" alt="Photo d'un public passant un bon moment à un concert" aria-label="Photo 2 du carrousel">
 					</div>
 					<div class="carousel-item">
-						<img src="./assets/images/slider/edward-cisneros.webp" class="d-block w-100" alt="Photo d'un couple pendant leur mariage qui s'embrasse devant une assemblée en liesse">
+						<img src="./assets/images/slider/edward-cisneros.webp" class="d-block w-100" alt="Photo d'un couple pendant leur mariage qui s'embrasse devant une assemblée en liesse" aria-label="Photo 3 du carrousel">
 					</div>
 				</div>
-				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" aria-label="Bouton précédent du carrousel">
 					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Previous</span>
+					<span class="visually-hidden">Previous</span> <!--Possible de changer les span ?-->
 				</button>
-				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" aria-label="Bouton suivant du carrousel">
 					<span class="carousel-control-next-icon" aria-hidden="true"></span>
 					<span class="visually-hidden">Next</span>
 				</button>
@@ -110,7 +110,7 @@
 
 		<article id="about"> <!--Modification sémantique : changement de la balise div en article-->
 			<div class="picture left">
-				<img src="./assets/images/nina.webp" alt="Portrait de la photographe Nina Carducci">
+				<img src="./assets/images/nina.webp" alt="Portrait de la photographe Nina Carducci" aria-label="Photo du bloc sur l'auteur">
 			</div>
 			<div id="about-me">
 				<h2 class="about-me__title">À propos de moi</h2> <!--Modifications : "à" mis en majuscule + changement balise h3 en h2-->
@@ -130,15 +130,15 @@
 			<h2 class="title">Portfolio</h2> <!--Modification sémantique : changement de la balise h3 en h2-->
 			<div class="container py-3">
 				<div class="gallery" style="display: none"> <!--ici-->
-					<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul.webp" alt="Une photo montrant des gens s'amusant à un concert"/>
-					<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou.webp" alt="Portrait d'un homme d'affaires qui porte un costume"/>
-					<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman.webp" alt="Photo d'une femme en train de rire dans un open-space"/>
-					<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing.webp" alt="Photo de deux personnes se touchant les mains"/>
-					<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji.webp" alt="Photo d'un homme fermant les yeux"/>
-					<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens.webp" alt="Photo d'un couple riant sur une plage, en tenue de marié"/>
-					<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg.webp" alt="Portrait d'une jeune femme avec des cheveux courts et des lunettes, qui porte un pull noir"/>
-					<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill.webp" alt="Photo d'un chanteur sur scène en plein concert, saluant le public avec sa main gauche"/>
-					<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe.webp" alt="Photo d'une femme aux cheveux bruns, en train de rire assise devant un ordinateur"/>
+					<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul.webp" alt="Une photo montrant des gens s'amusant à un concert" aria-label="Photo 1 de la galerie"/> <!--Ajout aria-label pour accessibilité-->
+					<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou.webp" alt="Portrait d'un homme d'affaires qui porte un costume" aria-label="Photo 2 de la galerie"/>
+					<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman.webp" alt="Photo d'une femme en train de rire dans un open-space" aria-label="Photo 3 de la galerie"/>
+					<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing.webp" alt="Photo de deux personnes se touchant les mains" aria-label="Photo 4 de la galerie"/>
+					<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji.webp" alt="Photo d'un homme fermant les yeux" aria-label="Photo 5 de la galerie"/>
+					<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens.webp" alt="Photo d'un couple riant sur une plage, en tenue de marié" aria-label="Photo 6 de la galerie"/>
+					<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg.webp" alt="Portrait d'une jeune femme avec des cheveux courts et des lunettes, qui porte un pull noir" aria-label="Photo 7 de la galerie"/>
+					<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill.webp" alt="Photo d'un chanteur sur scène en plein concert, saluant le public avec sa main gauche" aria-label="Photo 8 de la galerie"/>
+					<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe.webp" alt="Photo d'une femme aux cheveux bruns, en train de rire assise devant un ordinateur" aria-label="Photo 9 de la galerie"/>
 				</div>
 			</div>
 				<figure class="quote">
@@ -207,12 +207,12 @@
 				<p> N’hésitez pas à m’écrire ! Je vous répondrai en moins de 24 heures</p>
 				<form action="" method="post">
 					<label for="name">Nom</label> <!--Modification sémantique : ajout de l'attribut for pour associer le label à l'input-->
-					<input type="text" name="name" id="name"> <!--Modification sémantique : "name" mis en anglais-->
+					<input type="text" name="name" id="name" aria-label="Formulaire contact nom"> <!--Modification sémantique : "name" mis en anglais-->
 					<label for="email">E-mail</label> <!--Modification sémantique : ajout de l'attribut for-->
-					<input type="email" name="email" id="email">
+					<input type="email" name="email" id="email" aria-label="Formulaire contact e-mail">
 					<label for="message">Message</label> <!--Modification sémantique : ajout de l'attribut for-->
-					<textarea name="message" id="message" cols="30" rows="10"></textarea>
-					<input type="submit" value="Envoyer"/>
+					<textarea name="message" id="message" cols="30" rows="10" aria-label="Zone de texte contact"></textarea>
+					<input type="submit" value="Envoyer" aria-label="Bouton envoyer du formulaire"/>
 				</form>
 			</div>
 			<figure class="picture right"> <!--Pourquoi double class ?--> <!--Modification sémantique : changement de la balise div en figure-->
