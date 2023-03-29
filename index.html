@@ -59,10 +59,6 @@
 				]
 		}
 	</script> <!--Ajout du référencement local-->
-	<script src="./assets/bootstrap/bootstrap.bundle.js" defer></script> <!--Des defer pour différer le chargement de ces ressources, permet de pouvoir afficher le document plus rapidement-->
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
-	<script src="./assets/maugallery.js" defer></script>
-	<script src="./assets/scripts.js" defer></script>
 </head>
 <body>
 	<header class="top-header"> <!--Modification sémantique : changement de la balise div en header-->
@@ -220,6 +216,10 @@
 			</figure>
 		</div>
 	</footer>
+	<script src="./assets/bootstrap/bootstrap.bundle.js"></script> <!--Script déplacé pour charger après le contenu de la page web - les interactions peuvent se faire une fois la page chargée-->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="./assets/maugallery.js" ></script>
+	<script src="./assets/scripts.js"></script>
 </body>
 
 </html>
