@@ -45,12 +45,11 @@ body {
 #about {
 	display: flex;
 	background-color: #F6D2B8;
-	padding-inline: 100px;
-	padding-block: 100px;
+	padding: 100px; /*Modification : une propriété est suffisante pour les padding inline et block*/
 	position: relative;
 }
 
-.picture.left::before {
+.picture.left::before{
 	content: ' ';
 	background-color: #E5975F;
 	width: 374px;
@@ -175,7 +174,6 @@ body {
 	justify-content: space-between;
 	display: flex;
 	padding : 2em 0;
-
 }
 
 .service {
@@ -195,8 +193,7 @@ body {
 	margin: auto;
 	background-color: #D8D3A8 ;
 	position: relative;
-	padding-inline: 100px;
-	padding-block: 100px;
+	padding: 100px; /*Modification : une seule propriété padding suffit*/
 }
 
 #contact .container {
@@ -344,8 +341,7 @@ input[type="submit"] {
 		max-width: 90%;
 	}
 	#about, #contact {
-		padding-inline: 2em;
-		padding-block: 2em;
+		padding: 2em; /*Modification : une seule propriété padding suffit*/
 	}
 	form {
 		width: 100%;
